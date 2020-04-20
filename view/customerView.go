@@ -73,7 +73,7 @@ func(cv *customerView) add() {
 		fmt.Print("电话：")
 		fmt.Scanln(&phone)
 	}
-	//构建Customer
+	//构建Customer结构体
 	customer := model.NewCustomerNoId(name,gender,age,email,phone)
 	cv.customerService.Add(customer)
 	fmt.Println("--------------------------------------")
