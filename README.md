@@ -1,2 +1,3 @@
 # cecustomerManage
+适合初学者练习的demo
 git clone项目到本地src目录下，需要根据自己的path修改路基
