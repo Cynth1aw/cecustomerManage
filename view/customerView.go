@@ -13,12 +13,12 @@ type customerView struct {
 }
 func (cv *customerView) list() {
 	customer := cv.customerService.List()
-	fmt.Println("--------------------------------------")
+	fmt.Println("---------------------------------------")
 	fmt.Println("编号\t姓名\t性别\t年龄\t邮箱\t电话\n ")
 	for i := 0; i < len(customer); i++ {
 		fmt.Println(customer[i].GetInfo())
 	}
-	fmt.Println("--------------------------------------")
+	fmt.Println("---------------------------------------")
 }
 func(cv *customerView) add() {
 	fmt.Println("-------------添加客户-----------------")
